@@ -3,7 +3,7 @@ MAINTAINER roylincoln002@gmail.com
 RUN yum install -y wget \
  zip\
  unzip
-ADD wget https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+ADD wget -b https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
 RUN cp -rvf photogenic/* .
